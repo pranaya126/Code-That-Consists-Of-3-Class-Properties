@@ -1,0 +1,21 @@
+class MyClass; 
+int property1; 
+string property2;
+bit property3;
+function new(int prop1, string prop2, bit prop3); 
+this.property1 = prop1;
+this.property2 = prop2;
+this.property3 = prop3;
+endfunction
+function void display_properties();
+ 
+$display("Property1: %0d", property1);
+$display("Property2: %s", property2);
+$display("Property3: %b", property3);
+Endfunction endclass
+
+module tb; 
+initial begin
+MyClass obj = new(42, "Hello, SystemVerilog!", 1); 
+obj.display_properties();
+end endmodule
