@@ -1,0 +1,1 @@
+# Code-That-Consists-Of-3-Class-Properties
